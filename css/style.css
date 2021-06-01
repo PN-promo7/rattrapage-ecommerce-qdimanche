@@ -17,12 +17,7 @@
   margin-left: auto;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
+a, a:hover {
   text-decoration: none;
 }
 
@@ -34,8 +29,34 @@ body {
   position: relative;
 }
 
-body p {
+body p, a {
   color: black;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.0rem;
+  padding-top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 img {
@@ -65,14 +86,6 @@ footer {
   display: flex;
   background-color: #1E90FF;
   color: white;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  margin-bottom: 10px;
 }
 
 /* nav */
@@ -262,17 +275,12 @@ div[class*=box] {
 }
 
 /* tendances */
-.tendances_block_1 {
+
+.tendances_block {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
   margin-top: 30px;
-}
-
-.tendances_block_2 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 65px;
 }
 
 .tendances_article {
@@ -287,6 +295,7 @@ div[class*=box] {
 
 .tendances_article:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35), 0 3px 6px rgba(0, 0, 0, 0.48);
+  cursor: pointer;
 }
 
 .tendances_article img {
@@ -294,46 +303,14 @@ div[class*=box] {
   width: 200px;
 }
 
-.tendances_article_img_design {
-  background-image: url(../images/design.jpg);
-  width: 38%;
-}
-
-.tendances_article_img_dev {
-  background-image: url(../images/codage.jpg);
-  width: 38%;
-}
-
-.tendances_article_img_univ {
-  background-image: url(../images/faqstudent.jpg);
-  width: 38%;
-}
-
-.tendances_article_img_music {
-  background-image: url(../images/musique.jpg);
-  width: 38%;
+.tendances_article_img {
+width: 38%;
 }
 
 .tendances_article_text {
   text-align: center;
   width: 60%;
   padding: 50px 50px;
-}
-
-.tendances_article_text_3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-left: 88px;
-}
-
-.tendances_article_text_4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-left: 136px;
 }
 
 .content_tendances {
@@ -346,12 +323,7 @@ div[class*=box] {
   height: 170px;
 }
 
-.subtitle_tendances {
-  font-size: 18px;
-  color: #1E90FF;
-}
-
-.subtitle_offres {
+.subtitle_tendances, .subtitle_offres {
   font-size: 18px;
   color: #1E90FF;
 }
@@ -373,6 +345,7 @@ div[class*=box] {
 
 .laptop_offre:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35), 0 3px 6px rgba(0, 0, 0, 0.48);
+  cursor: pointer;
 }
 
 .Nos_offres {
@@ -409,7 +382,7 @@ div[class*=box] {
   color: white;
 }
 
-.add_fav:hover {
+.add_fav:hover, .price p {
   color: red
 }
 
@@ -435,22 +408,7 @@ div[class*=box] {
   color: #FFBA49;
 }
 
-.add_to_cart_1 {
-  background-color: #1E90FF;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  height: 30px;
-  width: 154px;
-  border: none;
-  color: white;
-}
-
-.add_to_cart_1:hover {
-  background-color: #1E90FF;
-  transition: 0.5s;
-}
-
-.add_to_cart_2 {
+.add_to_cart {
   background-color: #1E90FF;
   text-align: center;
   margin-top: 15px;
@@ -461,41 +419,10 @@ div[class*=box] {
   color: white;
 }
 
-.add_to_cart_2:hover {
+.add_to_cart:hover {
   background-color: #1E90FF;
   transition: 0.5s;
-}
-
-.add_to_cart_3 {
-  background-color: #1E90FF;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  height: 30px;
-  width: 154px;
-  border: none;
-  color: white;
-}
-
-.add_to_cart_3:hover {
-  background-color: #1E90FF;
-  transition: 0.5s;
-}
-
-.add_to_cart_4 {
-  background-color: #1E90FF;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  height: 30px;
-  width: 154px;
-  border: none;
-  color: white;
-}
-
-.add_to_cart_4:hover {
-  background-color: #1E90FF;
-  transition: 0.5s;
+  cursor: pointer;
 }
 
 .avis {
@@ -513,10 +440,6 @@ div[class*=box] {
 .price {
   display: flex;
   justify-content: center;
-}
-
-.price p {
-  color: red;
 }
 
 .price del {
